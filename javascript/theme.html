@@ -1,0 +1,24 @@
+<html>
+    <body id="bodyTag">
+        <h1>Hello world</h1>
+        <button onclick="changeTheme()" id="themeBtn">Dark</button>
+    </body>
+    <script>
+        var isLight = true;
+        var bodyTag = document.getElementById('bodyTag');
+        var themeBtn = document.getElementById('themeBtn');
+        function changeTheme() {
+            if (isLight == true) {
+                bodyTag.style.backgroundColor = "black";
+                bodyTag.style.color = "white";
+                themeBtn.innerText = "Light";
+                isLight = false;
+            } else {
+                bodyTag.style.backgroundColor = "white";
+                bodyTag.style.color = "black";
+                themeBtn.innerText = "Dark";
+                isLight = true;
+            }
+        }
+    </script>
+</html>

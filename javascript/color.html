@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    Enter font size:
+    <input id="sizeInput" type="number" value="0" onchange="onSizeChange()"> <br>
+    <span id="sizeTag">0</span>
+</body>
+<script>
+    var sizeTag = document.getElementById("sizeTag");
+    var sizeInput = document.getElementById("sizeInput");
+    function onSizeChange() {
+        sizeTag.innerText = sizeInput.value;
+        sizeTag.style.fontSize = sizeInput.value + 'px';
+    }
+</script>
+
+</html>

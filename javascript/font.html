@@ -1,0 +1,14 @@
+<html>
+    <body>
+        Enter size: 
+        <input id="sizeInput" type="number" onkeyup="onSizeChange()"> <br>
+        <span id="sizeTag"></span>
+    </body>
+    <script>
+        var sizeTag = document.getElementById("sizeTag");
+        var sizeInput = document.getElementById("sizeInput");
+        function onSizeChange() {
+            sizeTag.innerText = sizeInput.value;
+        }
+    </script>
+</html>

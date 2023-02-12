@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    num1 : <input id="num1" type="number"><br>
+    num2 : <input id="num2" type="number"> <br>
+    <button onclick="add()">Add</button>
+    <div id="ans">Your answer goes here</div>
+</body>
+<script>
+    var num1Elem = document.getElementById("num1");
+    var num2Elem = document.getElementById("num2");
+    var ansElem = document.getElementById("ans");
+    function add() {
+        console.log("hello world")
+        var n1 = parseInt(num1Elem.value);
+        var n2 = parseInt(num2Elem.value);
+        var add = n1 + n2;
+        console.log(add);
+        ansElem.innerText = "Answer is : " + add
+    }
+</script>
+
+</html>
